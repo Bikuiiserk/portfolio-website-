@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignments</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header class="main-header">
+        <h1>Assignments</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="assignments.html">Assignments</a></li>
+                <li><a href="recommendations.html">Recommendations</a></li>
+                <li><a href="cv/CV.pdf" target="_blank">CV</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="assignments animate__animated animate__fadeInLeft">
+        <h2>Upload and Download Assignments</h2>
+        <p>Here you can upload your assignments and share them with others. Follow these steps:</p>
+        <ol>
+            <li>Click the "Choose File" button to select your assignment.</li>
+            <li>Click the "Upload" button to upload your file.</li>
+        </ol>
+
+        <form action="upload_assignment.php" method="post" enctype="multipart/form-data">
+            <input type="file" name="fileToUpload" id="fileToUpload">
+            <input type="submit" value="Upload Assignment" name="submit">
+        </form>
+
+        <h2>Download Assignments</h2>
+        <ul id="assignment-list">
+            <!-- Dynamically populated list of assignments -->
+        </ul>
+    </section>
+
+    <footer class="main-footer">
+        <p>&copy; 2024 Bikram Pal. All rights reserved.</p>
+    </footer>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
